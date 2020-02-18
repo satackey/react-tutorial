@@ -1,0 +1,10 @@
+
+  react:
+    build: '.'
+    working_dir: /app
+    volumes:
+      - /app/node_modules
+      - .:/app
+    ports:
+      - 3000:3000
+    command: yarn start
